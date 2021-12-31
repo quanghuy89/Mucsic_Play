@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    background-color: violet ;
+}
+/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+} */
+
+.player{
+    position: relative;
+    max-width: 484px;
+    margin: 0 auto;
+    border: 2px solid #EC1F55;
+    border-radius: 2px;
+}
+
+.dashboard{
+    padding: 16px 16px 14px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    max-width: 480px;
+    border-bottom: 1px solid #bebebe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header {
+    text-align: center;
+}
+
+header h4{
+    color: #EC1F55;
+}
+
+.cd {
+    display: flex;
+    width: 100%;
+    max-width: auto;
+}
+
+.cd-thumb{
+    width:50%;
+    padding-top: 50%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+}
+
+.control{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+}
+
+.playlist{
+    margin-top: 441px;
+}
+
+.song{
+    display: flex;
+    justify-content: space-around;
+    background-color:#fff;
+    padding: 5px;
+    margin: 10px 0;
+    box-shadow: 0 6px 10px -5px #ec1f565e;
+}
+
+.song-thumb{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;  
+}
+
+.song .detail{
+    min-width: 60%;
+}
+
+.btn{
+    color: #bebebe;
+    font-size: 30px;
+}
+
+.btn:hover{
+    color: #EC1F55;
+}
+
+
+.btn-play{
+    width: 50px;
+    height: 50px;
+    background-color: #EC1F55;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+.btn-play:hover{
+    color: white;
+    box-shadow:  0 0px 15px 10px #ec1f565e;
+}
+
+.btn-repeat.active,
+.btn-random.active{
+    color: #EC1F55;
+}
+
+.btn-repeat,
+.btn-random{
+    color: #bebebe;
+}
+
+.player .icon-pause{
+    display: none;
+}
+
+.player.playing .icon-pause{
+    display: block;
+}
+
+.player.playing .icon-play{
+    display: none;
+}
+
+.song.active{
+    background-color: #ec1f5662;
+}
